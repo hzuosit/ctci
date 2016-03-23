@@ -1,4 +1,5 @@
 #One Away
+#time complexity is O(n) cause while loop 
 def oneAway(s1,s2):
 	if len(s1)<len(s2):
 		s1,s2 = s2,s1
