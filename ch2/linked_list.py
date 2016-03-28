@@ -42,10 +42,10 @@ class linked_list:
 		found = False
 		while node is not None and not found:
 			if node.value == data:
-				found == True
+				found = True
 			else:
 				node = node.next
-			return found
+	        return found
 
 	def __contain__(self,data):
 		return self.search(data)
@@ -71,7 +71,7 @@ class linked_list:
 
 	def __iter__(self):
 		node = self.head
-		while node is not None:
+		while node:
 			yield node.value
 			node = next.node
 
